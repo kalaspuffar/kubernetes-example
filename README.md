@@ -1,7 +1,6 @@
 # kubernetes-example
 A small example of how you could setup a simple kubernetes cluster
 
-
 First we need some commands to work with your cluster these are a good start to both create, delete and find out information.
 ```
 kubectl create -f <yaml file>
@@ -23,7 +22,7 @@ Lastly we have some good commands to init and create a new project. Creating clu
 gcloud init
 gcloud projects create <project name>
 gcloud config set project <project id>
-gcloud container clusters create example --scopes "cloud-platform" --num-nodes 2 --zone eu
+gcloud container clusters create example --scopes "cloud-platform" --num-nodes 2 --zone europe-west1-b
 gcloud container get-server-config --zone europe-west1-b
 gcloud container clusters delete example --zone europe-west1-b
 ```
