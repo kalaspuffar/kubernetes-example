@@ -6,6 +6,5 @@ spec:
   type: LoadBalancer
   ports:
   - port: 80
-    nodePort: 31338
   selector:
     app: nginx-pod
